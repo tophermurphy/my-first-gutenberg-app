@@ -1,0 +1,49 @@
+{
+    "name": "my-first-gutenberg-app",
+    "version": "1.0.0",
+    "private": true,
+    "description": "My first Gutenberg App.",
+    "author": "The WordPress Contributors",
+    "license": "GPL-2.0-or-later",
+    "keywords": [
+        "WordPress",
+        "block"
+    ],
+    "homepage": "https://github.com/WordPress/gutenberg-examples/",
+    "repository": "git+https://github.com/WordPress/gutenberg-examples.git",
+    "bugs": {
+        "url": "https://github.com/WordPress/gutenberg-examples/issues"
+    },
+    "main": "build/index.js",
+    "devDependencies": {
+        "@types/react": "^19.1.8",
+        "@types/react-dom": "^19.1.6",
+        "@wordpress/scripts": "^30.18.0",
+        "typescript": "^5.8.3"
+    },
+    "scripts": {
+        "build": "wp-scripts build",
+        "check-engines": "wp-scripts check-engines",
+        "check-licenses": "wp-scripts check-licenses",
+        "format": "wp-scripts format",
+        "lint:css": "wp-scripts lint-style",
+        "lint:js": "wp-scripts lint-js",
+        "lint:md:docs": "wp-scripts lint-md-docs",
+        "lint:pkg-json": "wp-scripts lint-pkg-json",
+        "packages-update": "wp-scripts packages-update",
+        "plugin-zip": "wp-scripts plugin-zip",
+        "start": "wp-scripts start",
+        "test:e2e": "wp-scripts test-e2e",
+        "test:unit": "wp-scripts test-unit-js",
+        "wp-stop": "wp-env stop"
+    },
+    "dependencies": {
+        "@wordpress/components": "^29.11.0",
+        "@wordpress/core-data": "^7.25.0",
+        "@wordpress/data": "^10.25.0",
+        "@wordpress/element": "^6.25.0",
+        "@wordpress/html-entities": "^4.25.0",
+        "@wordpress/notices": "^5.25.0",
+        "react": "^19.1.0"
+    }
+}
