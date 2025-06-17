@@ -24,7 +24,6 @@ export const DeletePageButton = ({ pageId }: { pageId: number | string }) => {
   );
 
   const handleClick = async () => {
-    console.log("clickee");
     const success = await deleteEntityRecord("postType", "page", pageId, {});
     if (success) {
       createSuccessNotice("The page was deleted!", { type: "snackbar" });
